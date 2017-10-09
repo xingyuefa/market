@@ -12,6 +12,10 @@ export default {
 </script>
 
 <style>
+  *{
+    margin:0;
+    padding:0;
+  }
   /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
   /* Document
@@ -459,5 +463,8 @@ export default {
 
   [hidden] {
     display: none;
+  }
+  ul{
+    list-style: none;
   }
 </style>

@@ -15,4 +15,4 @@ Vue.component('market-home',Home);
 new Vue({
   el: '#app',
   render: h => h(App)
-})
+});

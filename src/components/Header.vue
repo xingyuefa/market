@@ -22,5 +22,6 @@ export default{
         display: flex;
         height: 0.88rem;
         background: black;
+        z-index: 1;
     }
 </style>

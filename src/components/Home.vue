@@ -14,9 +14,10 @@
                 <img src="../assets/message@2x.png">
             </div>
         </market-header>
-        <div class="banner">
-            <img src="../assets/banner@2x.png">
-        </div>
+        <market-banner v-bind:banners="banners"></market-banner>
+        <!--<div class="banner">-->
+            <!--<img src="../assets/banner@2x.png">-->
+        <!--</div>-->
         <!--分类-->
         <div class="classify">
 
@@ -24,10 +25,19 @@
     </div>
 </template>
 <script>
+    //Import
+    import Banner from './Banner.vue';
     export default{
+        components:{
+            'market-banner':Banner
+        },
         data(){
             return{
-
+                banners:[
+                    {name:'cosmetics',src:'src/assets/banner@2x.png'},
+                    {name:'cosmetics',src:'src/assets/banner@2x.png'},
+                    {name:'cosmetics',src:'src/assets/banner@2x.png'}
+                ]
             }
         }
     }
@@ -98,7 +108,7 @@
         border-radius: 0.25rem;
     }
     div{
-        height:100%;
+        /*height:100%;*/
     }
     .scan img{
         width: 0.48rem;
