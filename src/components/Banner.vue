@@ -41,6 +41,12 @@
     }
 </script>
 <style scoped>
+    .banner{
+        position: absolute;
+        width: 7.5rem;
+        height: 3.85rem;
+        overflow: hidden;
+    }
     img{
         width: 7.5rem;
         height: 3.85rem;

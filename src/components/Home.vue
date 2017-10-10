@@ -1,5 +1,6 @@
 <template>
     <div id="homePage">
+        <!--头部-->
         <market-header>
             <div slot="scan" class="scan">
                 <img src="./../assets/scan@3x.png"/>
@@ -14,22 +15,28 @@
                 <img src="../assets/message@2x.png">
             </div>
         </market-header>
+        <!--轮播-->
         <market-banner v-bind:banners="banners"></market-banner>
-        <!--<div class="banner">-->
-            <!--<img src="../assets/banner@2x.png">-->
-        <!--</div>-->
         <!--分类-->
-        <div class="classify">
-
-        </div>
+        <market-classify v-bind:classify="classify"></market-classify>
+        <!--活动-->
+        <market-active></market-active>
+        <!--精选市场-->
+        <market-feature></market-feature>
     </div>
 </template>
 <script>
     //Import
     import Banner from './Banner.vue';
+    import Classify from './Classify.vue';
+    import Active from './Active.vue';
+    import Feature from './Featured.vue';
     export default{
         components:{
-            'market-banner':Banner
+            'market-banner':Banner,
+            'market-classify':Classify,
+            'market-active':Active,
+            'market-feature':Feature
         },
         data(){
             return{
@@ -37,6 +44,16 @@
                     {name:'cosmetics',src:'src/assets/banner@2x.png'},
                     {name:'cosmetics',src:'src/assets/banner@2x.png'},
                     {name:'cosmetics',src:'src/assets/banner@2x.png'}
+                ],
+                classify:[
+                    {name:'全球购',imgSrc:'src/assets/global-shopping@2x.png'},
+                    {name:'电器城',imgSrc:'src/assets/circuit-city@2x.png'},
+                    {name:'生活超市',imgSrc:'src/assets/life-supermarket@2x.png'},
+                    {name:'鞋品专柜',imgSrc:'src/assets/shoes-shoppe@2x.png'},
+                    {name:'服装城',imgSrc:'src/assets/clothing-city@2x.png'},
+                    {name:'包包馆',imgSrc:'src/assets/bags@2x.png'},
+                    {name:'奢侈品',imgSrc:'src/assets/luxury@2x.png'},
+                    {name:'分类',imgSrc:'src/assets/classification@2x.png'}
                 ]
             }
         }
