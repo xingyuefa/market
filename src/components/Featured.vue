@@ -25,7 +25,8 @@
         background: #f1eff2;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-cont
+        ent: center;
     }
     .title img{
         width: 3.18rem;
