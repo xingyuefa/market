@@ -23,6 +23,9 @@
         <market-active></market-active>
         <!--精选市场-->
         <market-feature></market-feature>
+        <market-productList></market-productList>
+        <!--导航栏-->
+        <market-navigation></market-navigation>
     </div>
 </template>
 <script>
@@ -31,12 +34,16 @@
     import Classify from './Classify.vue';
     import Active from './Active.vue';
     import Feature from './Featured.vue';
+    import ProductList from './ProductList.vue';
+    import Navigation from './Navigation.vue';
     export default{
         components:{
             'market-banner':Banner,
             'market-classify':Classify,
             'market-active':Active,
-            'market-feature':Feature
+            'market-feature':Feature,
+            'market-productList':ProductList,
+            'market-navigation':Navigation,
         },
         data(){
             return{
