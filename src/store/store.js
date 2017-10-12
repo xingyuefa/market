@@ -10,6 +10,13 @@ export const store = new Vuex.Store({
             {mainBazaar:{imgUrl:'./src/assets/home-textiles@2x.png'},eputyBazaar:[{imgUrl:'../src/assets/vintage-wine@2x.png'},{imgUrl:'../src/assets/Gentlman@2x.png'}]},
             {mainBazaar:{imgUrl:'./src/assets/optimizationBags@2x.png'},eputyBazaar:[{imgUrl:'../src/assets/tideWomen@2x.png'},{imgUrl:'../src/assets/carAccessories@2x.png'}]}
         ],
+        navBtn:[
+            {navBtnSrc:'../src/assets/homeBtn@2x.png',navBtnName:'首页'},
+            {navBtnSrc:'../src/assets/Vplaza@2x.png',navBtnName:'名品特卖'},
+            {navBtnSrc:'../src/assets/discover@2x.png',navBtnName:'发现'},
+            {navBtnSrc:'../src/assets/shoppingCar@2x.png',navBtnName:'购物车'},
+            {navBtnSrc:'../src/assets/mine@2x.png',navBtnName:'我的'},
+        ],
         products:[
             {productName:'索尼HRX1210游戏机',productPrice:'800.00',purchases:'32155',productImgSrc:'../src/assets/playStation@2x.png',productLogoSrc:'../src/assets/SONY-LOGO@2x.png',isRegularChain:false},
             {productName:'Apple/苹果 运动手表',productPrice:'121.00',purchases:'56981',productImgSrc:'../src/assets/AppleWatch@2x.png',productLogoSrc:'../src/assets/SONY-LOGO@2x.png',isRegularChain:true},

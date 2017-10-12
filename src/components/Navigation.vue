@@ -1,24 +1,8 @@
 <template>
     <nav>
-        <div>
-            <img>
-            <span>首页</span>
-        </div>
-        <div>
-            <img>
-            <span>名品特卖</span>
-        </div>
-        <div>
-            <img>
-            <span>发现</span>
-        </div>
-        <div>
-            <img>
-            <span>购物车</span>
-        </div>
-        <div>
-            <img>
-            <span>我的</span>
+        <div v-for="(btn,index) in navBtn">
+            <img v-bind:src="btn.navBtnSrc">
+            <span>{{btn.navBtnName}}</span>
         </div>
     </nav>
 </template>
@@ -28,18 +12,39 @@
             return{
 
             }
+        },
+        computed:{
+            navBtn(){
+                return this.$store.state.navBtn;
+            }
         }
     }
 </script>
 <style scoped>
     nav{
-        color: #fff;
         position: fixed;
         width:100%;
+        height: 1rem;
+        background-color: #ffffff;
         bottom:0;
         display: flex;
-        font-size: 0.25rem;
         justify-content: space-around;
-        background: black;
+        align-items:center;
+        font-size: 0.25rem;
+        box-sizing: border-box;
+        border-top: 1px #eee solid;
+    }
+    nav div{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width: 1.2rem;
+        height: 100%;
+    }
+    nav div img{
+        height: 0.45rem;
+        margin-bottom: 0.1rem;
     }
 </style>
