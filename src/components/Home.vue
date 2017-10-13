@@ -68,8 +68,8 @@
 </script>
 <style scoped>
     #homePage{
-        height: 50rem;
         padding-top: 0.88rem;
+        padding-bottom: 1rem;
     }
     @font-face {
         font-family: 'iconfont';

@@ -1,9 +1,9 @@
 <template>
     <nav>
-        <div v-for="(btn,index) in navBtn">
+        <router-link to="/vplaza" tag="div" v-for="(btn,index) in navBtn" v-bind:key="index" exact>
             <img v-bind:src="btn.navBtnSrc">
             <span>{{btn.navBtnName}}</span>
-        </div>
+        </router-link>
     </nav>
 </template>
 <script>

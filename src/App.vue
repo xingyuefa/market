@@ -1,7 +1,7 @@
 <template>
   <div>
-    <market-home>
-    </market-home>
+    <router-view>
+    </router-view>
   </div>
 </template>
 
