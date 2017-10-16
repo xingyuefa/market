@@ -1,7 +1,7 @@
 <template>
     <!--用时传参-->
     <header>
-        <div class="back">
+        <div class="back" @click="$router.go(-1);">
             <img v-bind:src="'../src/assets/back@2x.png'">
         </div>
         <span>{{Classification.name}}</span>
@@ -37,6 +37,7 @@
         box-sizing: border-box;
         border-bottom: 1px #eee solid;
         z-index: 1;
+        background: #fff;
     }
     header span{
         font-size: 0.35rem;

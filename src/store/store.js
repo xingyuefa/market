@@ -68,6 +68,18 @@ export const store = new Vuex.Store({
             {productName:'七匹狼正品男士真皮皮带',productPrice:'800.00',purchases:'462436',productImgSrc:'../src/assets/belt@2x.png',productLogoSrc:'../src/assets/SEPTWOLVES-LOGO@2x.png',isRegularChain:false},
             {productName:'女包LV专柜正品',productPrice:'1235.00',purchases:'64432',productImgSrc:'../src/assets/lvBag@2x.png',productLogoSrc:'../src/assets/bag-logo@2x.png',isRegularChain:true},
             {productName:'索尼HRX1210游戏机',productPrice:'800.00',purchases:'346435',productImgSrc:'../src/assets/playStation@2x.png',isRegularChain:true},
+        ],
+        Actives:[
+            {mainActiveImg:'../src/assets/vplaza-adv_01.png',mainActiveLogo:'../src/assets/special-offer@2x.png',theme:'今日特卖'},
+            {mainActiveImg:'../src/assets/vplaza-adv_01.png',mainActiveLogo:'../src/assets/special-offer@2x.png',theme:'今日特卖'},
+            {mainActiveImg:'../src/assets/vplaza-adv_01.png',mainActiveLogo:'../src/assets/special-offer@2x.png',theme:'今日特卖'},
+            {mainActiveImg:'../src/assets/vplaza-adv_01.png',mainActiveLogo:'../src/assets/special-offer@2x.png',theme:'今日特卖'}
+        ],
+        desenoActives:[
+            {desenoActivesImg:'../src/assets/langqingShop.png',desenoActivesLogo:'../src/assets/langqingLogo@2x.png',theme:'浪琴专卖店情人节特惠',Countdown:'2天6时2分'},
+            {desenoActivesImg:'../src/assets/langqingShop.png',desenoActivesLogo:'../src/assets/langqingLogo@2x.png',theme:'浪琴专卖店情人节特惠',Countdown:'2天6时3分'},
+            {desenoActivesImg:'../src/assets/langqingShop.png',desenoActivesLogo:'../src/assets/langqingLogo@2x.png',theme:'浪琴专卖店情人节特惠',Countdown:'2天6时4分'},
+            {desenoActivesImg:'../src/assets/langqingShop.png',desenoActivesLogo:'../src/assets/langqingLogo@2x.png',theme:'浪琴专卖店情人节特惠',Countdown:'2天6时25分'},
         ]
     }
 });

@@ -24,7 +24,7 @@ Vue.component('market-home',Home);
 const router = new VueRouter({
     routes:Routes
 });
-new Vue({
+var vm = new Vue({
     el: '#app',
     store:store,
     render: h => h(App),

@@ -21,25 +21,25 @@
         </div>
         <div class="advertise">
             <!--主活动-->
-            <div class="mainActive">
-                <img v-bind:src="'../src/assets/vplaza-adv_01.png'">
+            <div class="mainActive" v-for="(acitve,index) in Actives" v-bind:key="index">
+                <img v-bind:src="acitve.mainActiveImg">
                 <div>
-                    <img v-bind:src="'../src/assets/special-offer@2x.png'">
-                    <span>今日特卖</span>
+                    <img v-bind:src="acitve.mainActiveLogo">
+                    <span>{{acitve.theme}}</span>
                 </div>
             </div>
             <!--限时活动-->
-            <div class="deseno">
-                <img v-bind:src="'../src/assets/langqingShop.png'">
+            <div class="deseno" v-for="(desenoActive,index) in desenoActives" v-bind:key="index">
+                <img v-bind:src="desenoActive.desenoActivesImg">
                 <div class="info">
-                    <img v-bind:src="'../src/assets/langqingLogo@2x.png'">
+                    <img v-bind:src="desenoActive.desenoActivesLogo">
                     <div>
                         <div>
-                            <span>浪琴专卖店情人节特惠</span>
+                            <span>{{desenoActive.theme}}</span>
                         </div>
                         <div>
                             <img v-bind:src="'../src/assets/Countdown@2x.png'">
-                            <span>剩余2天6时2分</span>
+                            <span>剩余{{desenoActive.Countdown}}</span>
                         </div>
                     </div>
                 </div>
@@ -49,6 +49,16 @@
 </template>
 <script>
     export default{
+        props:{
+            Actives:{
+                type:Array,
+                required:true
+            },
+            desenoActives:{
+                type:Array,
+                required:true
+            }
+        },
         data(){
             return{
 
@@ -78,9 +88,6 @@
     .options .active span:nth-child(2){
         background: #8600d3;
     }
-    .advertise>div{
-        height: 4.3rem;
-    }
     .advertise>div>img{
         height: 3.5rem;
     }
@@ -102,12 +109,17 @@
         align-items:center;
         height: 1.1rem;
         font-size: 0.3rem;
+        padding:0 0.2rem;
     }
     .info div div:nth-child(2){
+        display: flex;
         margin-top: 0.22rem;
+        justify-content: flex-end;
+        align-items: center;
     }
     .info img{
         height: 0.83rem;
+        margin-right: 0.1rem;
     }
     .info div img{
         height: 0.27rem;

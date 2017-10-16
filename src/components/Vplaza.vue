@@ -2,7 +2,7 @@
     <div class="vplaza">
         <!--头部组件-->
         <shop-header v-bind:Classification="Classification"></shop-header>
-        <shop-advertise></shop-advertise>
+        <shop-advertise v-bind="{Actives:Actives,desenoActives:desenoActives}"></shop-advertise>
     </div>
 </template>
 <script>
@@ -17,7 +17,15 @@
             return{
                 Classification:{
                     name:'名品特卖'
-                }
+                },
+            }
+        },
+        computed:{
+            Actives(){
+                return this.$store.state.Actives;
+            },
+            desenoActives(){
+                return this.$store.state.desenoActives;
             }
         }
     }
