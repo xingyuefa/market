@@ -1,5 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
+//echarts
+import echarts from 'echarts';
+
 import App from './App.vue';
 import Header from './components/Header.vue';
 import Home from './components/Home.vue';
@@ -12,6 +16,8 @@ import {store} from './store/store';
 
 //rem
 import './lib/rem';
+
+Vue.prototype.$echarts = echarts;
 
 //use package
 Vue.use(VueRouter);
