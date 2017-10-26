@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <router-view>
-    </router-view>
-  </div>
+    <div>
+        <my-tab>
+            <router-view>
+            </router-view>
+        </my-tab>
+    </div>
 </template>
 
 <script>
